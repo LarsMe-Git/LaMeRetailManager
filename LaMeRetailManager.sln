@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRMDataManager", "LRMDataManager\LRMDataManager.csproj", "{69E2ED28-C39A-4475-BF83-568475E98828}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LRMData", "LRMData\LRMData.sqlproj", "{24012805-AAD3-48F0-BF56-A3171C9706D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRMDesktopUI", "LRMDesktopUI\LRMDesktopUI.csproj", "{6EE7EB80-A7D1-445E-9A9A-C69A7426A18A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{69E2ED28-C39A-4475-BF83-568475E98828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E2ED28-C39A-4475-BF83-568475E98828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E2ED28-C39A-4475-BF83-568475E98828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24012805-AAD3-48F0-BF56-A3171C9706D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6EE7EB80-A7D1-445E-9A9A-C69A7426A18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE7EB80-A7D1-445E-9A9A-C69A7426A18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE7EB80-A7D1-445E-9A9A-C69A7426A18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE7EB80-A7D1-445E-9A9A-C69A7426A18A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
