@@ -9,7 +9,9 @@ using System.Windows;
 
 namespace LRMDesktopUI
 {
-   public class Bootstrapper : BootstrapperBase
+
+    // Dependency Injection 10:00
+    public class Bootstrapper : BootstrapperBase
     {
         private SimpleContainer _container = new SimpleContainer();
 
@@ -25,6 +27,13 @@ namespace LRMDesktopUI
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>();
+
+            GetType().Assembly.GetTypes()
+                .Where(type => type.IsClass)
+                .Where(type => type.Name.EndsWith("ViewModel"))
+                .ToList()
+                .ForEach(viewModelType => _container.RegisterPerRequest(
+                    viewModelType, viewModelType.ToString(), viewModelType));
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)
