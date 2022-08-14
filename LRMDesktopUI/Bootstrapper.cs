@@ -10,7 +10,7 @@ using System.Windows;
 namespace LRMDesktopUI
 {
 
-    // Dependency Injection 10:00
+    // Planning the Register 0:00
     public class Bootstrapper : BootstrapperBase
     {
         private SimpleContainer _container = new SimpleContainer();
